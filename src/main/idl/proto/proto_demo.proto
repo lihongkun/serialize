@@ -1,0 +1,17 @@
+syntax = "proto3";
+//生成文件所在包名
+option java_package = "com.lihongkun.serialize";
+
+message ProtoEntity{
+    int64 id = 1;
+    string name = 2;
+    string category = 3;
+    int64 price = 4;
+    int64 appId = 5;
+    int64 ctr = 6;
+}
+
+message ProtoResponse{
+    int32 code = 1;
+    repeated ProtoEntity data = 2;
+}
